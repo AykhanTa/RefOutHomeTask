@@ -22,8 +22,9 @@
             //string word = "There are some tasks";
             //SplitString(word);
 
-            BubbleSort(57, 73, 49, 99, 133, 20, 1);
+            //BubbleSort(57, 73, 49, 99, 133, 20, 1);
 
+            Console.WriteLine(First4Character("CodeAcademy"));
 
         }
         static void MinusElementsArr(int[] arr)
@@ -132,6 +133,23 @@
             {
                 Console.Write(item+" ");
             }
+        }
+
+        static string First4Character(string word)
+        {
+            string newString = string.Empty;
+            for (int i=0; i < word.Length; i++)
+            {
+                if (i == 4)
+                {
+                    break;
+                }
+                else
+                {
+                    newString += word[i]; 
+                }
+            }
+            return newString;
         }
     }
 }
